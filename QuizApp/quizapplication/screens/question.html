@@ -1,0 +1,55 @@
+<html>
+  <head>
+   <style>
+      #checkboxes label {
+         margin: auto;
+         width: 50%;
+         padding: 10px;
+         }
+
+      #checkboxes ul {
+          margin: auto;
+          width: 50%;
+          padding: 10px;
+
+         }
+
+      .vertical-center {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left:50%;
+         -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+   }
+   .container {
+       height: 200px;
+       position: relative;
+       padding:10px
+    }
+    .TEXT{
+      text-align:left
+    }
+   </style>
+  </head>
+  <body>
+
+  <div class="container">
+   <div class="vertical-center">
+     <div class="TEXT">
+      <label > some text</label>
+      <ul>
+          <li><input type="checkbox" value="1" class="options" onClick={checkbox1(this))}> checkbox1</li>
+          <li><input type="checkbox" value ="2" class="options" onClick={checkbox1(this))} > checkbox 2</li>
+          <li><input type="checkbox" value="3" class="options" onClick={checkbox1(this))}> checkbox 3</li>
+         <li><input type="checkbox" value="4" class="options" onClick={checkbox1(this))}> checkbox 4</li>
+      </ul>
+      <button onClick={}>NEXT</button>
+         <a>{showCorrect()}</a>
+     </div>
+   </div>
+      <script src="script.js"></script>
+
+  </div>
+  </body>
+</html>

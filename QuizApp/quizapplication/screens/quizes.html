@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     .container{
+	     width: auto;
+         max-width: 80%;
+         background-color: white;
+         border-radius: 5px;
+         padding: 10px;
+         box-shadow: 0 0 10px 2px;
+         marginTop:10;
+	 }
+	  #btnPrevious
+    {
+        float:left;
+    }
+    #spanStage
+    {
+        font-weight:bold;
+        vertical-align:middle;
+    }
+    #btnNext
+    {
+        float:right;
+    }
+	</style>
+  </head>
+     <body>
+       <div id="demo"></div>
+        <script src="script.js">{
+         document.getElementbyId("demo").innerHTML(
+         <div class='container'>
+            <h1>Quiz</h1>
+            <button onClick="location.href = 'http://localhost:63342/QuizApp/quizapplication/screens/question.html?_ijt=ri3lkhnh75tb4hmbn1suqo4of0';">
+              Start
+            </button>
+          </div>
+          )
+        }</script>
+     </body>
+</html>
