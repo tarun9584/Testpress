@@ -20,7 +20,6 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
     url(r'^Student/(?P<rollno>\d+)/$',views.saveRollno, name='saveRollno'),
     url(r'^Quizes/',views.getQuizlist,name='getQuizlist'),
-    url(r'^admin/', admin.site.urls),
+    url(r'^auth/', admin.site.urls),
     url(r'^login/', TemplateView.as_view(template_name=".\quizapplication\html\Login.html")),
-
 ]

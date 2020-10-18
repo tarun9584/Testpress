@@ -7,11 +7,11 @@ from django.shortcuts import render_to_response
 import os
 
 # Create your views here.
-def saveRollno(rolln):
+def saveRollno(request,rolln):
    data=Student()
    data.rollno=rolln
    data.save()
-
+   return(HttpResponse("<html><body><h1>saved</h1></body></html>"))
 
 def login(request):
     path = ".\quizapplication\html\Login.html"
